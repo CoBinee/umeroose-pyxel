@@ -96,7 +96,7 @@ class Title(Actor):
         self.execute_updates()
 
         # SPACE キーの入力
-        if pyxel.btnp(pyxel.KEY_SPACE) or pyxel.btnp(pyxel.GAMEPAD_1_A):
+        if pyxel.btnp(pyxel.KEY_SPACE) or pyxel.btnp(pyxel.GAMEPAD1_BUTTON_A):
 
             # 処理の更新
             self.set_process(self.start)

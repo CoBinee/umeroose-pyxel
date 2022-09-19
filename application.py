@@ -17,7 +17,7 @@ class Application:
     def __init__(self):
 
         # Pyxel の初期化
-        pyxel.init(256, 168, caption = "Umeroose", scale = 2, fps = 60)
+        pyxel.init(256, 168, title = "Umeroose", display_scale = 2, fps = 60)
 
         # シーンの初期化
         self.__scene = None

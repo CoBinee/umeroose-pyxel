@@ -126,12 +126,12 @@ class Player(Actor):
         self.__fill = -1
         
         # ← キーの入力
-        if pyxel.btnp(pyxel.KEY_LEFT) or pyxel.btnp(pyxel.KEY_A) or pyxel.btnp(pyxel.GAMEPAD_1_LEFT):
+        if pyxel.btnp(pyxel.KEY_LEFT) or pyxel.btnp(pyxel.KEY_A) or pyxel.btnp(pyxel.GAMEPAD1_BUTTON_DPAD_LEFT):
             self.__fill = int(self.__position_x) + Player.__FILL_DISTANCE
             pyxel.play(3, Const.SOUND_FILL)
 
         # → キーの入力
-        elif (not pyxel.btn(pyxel.KEY_LEFT) and not pyxel.btn(pyxel.KEY_A) and not pyxel.btn(pyxel.GAMEPAD_1_LEFT)) and (pyxel.btn(pyxel.KEY_RIGHT) or pyxel.btn(pyxel.KEY_D) or pyxel.btn(pyxel.GAMEPAD_1_RIGHT)):
+        elif (not pyxel.btn(pyxel.KEY_LEFT) and not pyxel.btn(pyxel.KEY_A) and not pyxel.btn(pyxel.GAMEPAD1_BUTTON_DPAD_LEFT)) and (pyxel.btn(pyxel.KEY_RIGHT) or pyxel.btn(pyxel.KEY_D) or pyxel.btn(pyxel.GAMEPAD1_BUTTON_DPAD_RIGHT)):
             if self.__position_x < Player.__POSITION_X_MAX:
                 self.__position_x = min(self.__position_x + Player.__SPEED, Player.__POSITION_X_MAX)
                 self.__direction = Player.__DIRECTION_RIGHT

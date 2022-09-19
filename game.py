@@ -276,7 +276,7 @@ class Game(Actor):
                 self.__draws.append(self.print_over)
 
             # SPACE キーの入力
-            if pyxel.btnp(pyxel.KEY_SPACE) or pyxel.btnp(pyxel.GAMEPAD_1_A):
+            if pyxel.btnp(pyxel.KEY_SPACE) or pyxel.btnp(pyxel.GAMEPAD1_BUTTON_A):
 
                 # 描画のクリア
                 self.__draws.clear()
